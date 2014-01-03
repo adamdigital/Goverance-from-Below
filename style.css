@@ -1,0 +1,18 @@
+/*
+Theme Name: Goverance from Below
+Description: Academic site for JP's research
+Author: Adam D Brown
+.
+*/
+
+@import url("css/bootstrap.min.css");
+@import url("css/mod.css");
+
+body {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+::selection {background: #ff69b4; color: #333;}
+::-moz-selection {background: #ff69b4; color: #333;}

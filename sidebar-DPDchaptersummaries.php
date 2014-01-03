@@ -1,0 +1,1 @@
+<p><a href="http://governancefrombelow.net/wp-content/uploads/2013/11/governance-from-below-chapter-summaries.pdf"><span class="glyphicon glyphicon-download"></span> All Governance from below chapter summaries (PDF)</a></p>

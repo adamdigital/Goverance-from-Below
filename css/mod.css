@@ -1,0 +1,227 @@
+ /*!
+ * GFB THEME v1.0.0
+ *
+ * Copyright 2013 AD BROWN
+ * Licensed creative commons
+ * adamdigital.co
+ *
+ * Designed and built by @adam_digital
+ */
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: relative;
+  z-index: 15;
+}
+.nav-expand {
+ padding:18px 0px;
+  }
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 14px;
+  color:#000;
+}
+.strapline {
+  font-size: 14px;
+  margin-top:15px;
+  letter-spacing:-0.5px;
+}
+.nav-tabs-xpadding {
+  padding:30px 0px;
+  border-bottom:1px solid #eee;
+}
+.spacer-vertical {
+  min-height: 40px;
+}
+.navbar-default {
+  border-color:#fff;
+ }
+.navbar-default .navbar-toggle {
+border-color: #A0A0A0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+background-color: #8D8D8D;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: #FFF;
+}
+
+/* Gallery override */
+
+.gllr_image_row {
+ clear:none;
+}
+
+/* Typography
+------------------------- */
+
+h2, h3, h4 {
+  font-weight: 300;
+}
+h2 {
+ margin-bottom:30px;
+}
+h3 {
+ font-size:16px;
+ text-transform:uppercase;
+}
+.feature-type h2 {
+  color: white;
+  font-size:50px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.feature-type p {
+  color: white;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+strong {
+  font-weight: 400;
+}
+.navbar-default .navbar-brand {
+ color: #2E2E2E;
+ font-weight: 500;
+ font-size: 21px;
+ text-shadow: 0px 4px 4px #FFFFFF;
+}
+
+/* BG
+------------------------- */
+
+.bgHome {
+  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/11/mountains-2500x470.jpg');
+  background-repeat:no-repeat;
+}
+.bgtiticaca {
+  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/titicaca-2500x470.jpg');
+  background-repeat:no-repeat;
+}
+.bgchile {
+  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/bol-chile-2500x470.jpg');
+  background-repeat:no-repeat;
+}
+.bgmountain {
+  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/la-Paz-6-bg2500x470-2.jpg');
+  background-repeat:no-repeat;
+}
+.bgvillage {
+  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/Titicaca-1-bg-2500x470.jpg');
+  background-repeat:no-repeat;
+}
+.bgchurch {
+  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/Titicaca-4-bg-2500x470.jpg');
+  background-repeat:no-repeat;
+}
+.bgbook {
+  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/decentralization-book-sideways.jpg');
+  background-repeat:no-repeat; top:left;
+}
+
+/* Body
+------------------------- */
+
+.homepage-body {
+  padding-top: 0px;
+  }
+
+.hp-feature {
+  background: #fff;
+  margin-top: 70px;
+}
+.well {
+  border: 0px solid #e3e3e3;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.05);
+  box-shadow: inset 0 0px 0px rgba(0,0,0,0.05);
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container-buy {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+.fix-thumb {
+ height:160px;
+}
+.label {
+ font-size:100%;
+ font-weight:400;
+}
+.homepage-gallery-positioning {
+ padding-left:50px;
+}
+.jumbotron-mod {
+ background: rgba(250, 250, 250, 1);
+ padding:60px 60px;
+ -moz-border-radius: 10px;
+ -webkit-border-radius: 10px;
+ border-radius: 10px; /* future proofing */
+ -khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 60px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+
+/* WP HELPERS
+-------------------------------------------------- */
+
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}

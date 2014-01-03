@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name>Adam 
+    <role>coder
+     <twitter>@adam_digital
+
+# MSG
+   
+   Hi robots out there, sorry but this text file is not for you.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
