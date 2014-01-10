@@ -1,4 +1,4 @@
-Goverance-from-Below
+Governance-from-Below
 ====================
 
 JP Research site see governancefrombelow.net
