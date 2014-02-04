@@ -19,7 +19,7 @@ Template Name: Graduates and students
     <hr>
   <div class="row">
 
-    <?php query_posts('cat=8&showposts=20'); ?>
+    <?php query_posts('cat=10&showposts=20&orderby=title&orderby=ASC'); ?>
     <?php while (have_posts()) : the_post(); ?>
     <div class="col-sm-6 col-md-4">
     <div class="thumbnail fix-thumb">
@@ -31,6 +31,20 @@ Template Name: Graduates and students
       </div>
       </div>
    <?php endwhile; ?>
+
+    <?php query_posts('cat=8&showposts=20&orderby=title&orderby=ASC'); ?>
+    <?php while (have_posts()) : the_post(); ?>
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail fix-thumb">
+      <?php the_post_thumbnail( array(150,160, false)); ?>
+    </div>
+      <div class="caption">
+        <h4><?php the_title(); ?></h4>
+        <p><?php the_content(); ?></p>
+      </div>
+      </div>
+   <?php endwhile; ?>
+
        
        </div>
        <div class="row">

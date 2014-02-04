@@ -1,5 +1,16 @@
 <?php
 
+// Overrides scheduling posts in the future
+
+remove_action('future_post', '_future_post_hook');
+add_filter( 'wp_insert_post_data', 'nacin_do_not_set_posts_to_future' );
+
+function nacin_do_not_set_posts_to_future( $data ) {
+    if ( $data['post_status'] == 'future' && $data['post_type'] == 'post' )
+        $data['post_status'] = 'publish';
+    return $data;
+}
+
 // Adding JS code to be run in <head>
 
 function mytheme_js_run_head() {

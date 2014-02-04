@@ -61,7 +61,7 @@ Template Name: About JP
       <div class="col-sm-12">
         <h3>CV</h3>
         <ul>
-          <li><a href="http://governancefrombelow.net/wp-content/uploads/2013/11/jean-paul-faguet-cv.pdf" target="_blank">Jean-Paul's CV</a></li>
+          <li><a href="http://governancefrombelow.net/wp-content/uploads/2014/02/CV-JPFaguet.pdf" target="_blank">Jean-Paul's CV</a></li>
         <ul>
       </div>
     </div><!--/ col 4 sidebar end -->

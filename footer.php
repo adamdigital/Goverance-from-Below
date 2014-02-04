@@ -3,7 +3,7 @@
 <hr class="featurette-divider">
 
       <footer class="container">
-        <p>&copy; <?php echo date('Y'); ?><a href="/jean-paul/"> Jean-Paul Faguet</a> | Website built by <a href="http://www.adamdigital.co">Adam B</a> | <a href="#">Back to top of page <span class="glyphicon glyphicon-arrow-up"></p>
+        <p>&copy; <?php echo date('Y'); ?><a href="/jean-paul/"> Jean-Paul Faguet</a> | Website built by <a href="https://github.com/adamdigital">Adam Brown</a></p>
       </footer>
 
     </div><!-- /.container -->

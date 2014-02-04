@@ -55,6 +55,7 @@ background-color: #FFF;
 .gllr_image_row {
  clear:none;
 }
+.gllr_single_image_text { display:none; }
 
 /* Typography
 ------------------------- */
