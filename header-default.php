@@ -37,6 +37,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
                   <ul class="dropdown-menu">
+                   <li><a href="/forty-percent/">Improving Basic Services for the Bottom Forty Percent</a></li>
                     <li><a href="/dpd/">Decentralization and Popular Democracy</a></li>
 	            <li><a href="/espanol/">Descentralización y democratización en Bolivia</a></li>
                   </ul>

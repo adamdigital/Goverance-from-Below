@@ -40,8 +40,8 @@ Template Name: Research
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <h4><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h4>
           <p><?php the_excerpt(); ?></p>
-          <a href="<?php the_permalink() ?>" class="btn btn-default"><span class="glyphicon glyphicon-share"></span> Read more</a>
-           <div class="spacer-vertical"></div>
+         
+           <hr class="featurette-divider">
           <?php endwhile; else: ?>
           <p><?php _e('Sorry, this page does not exist.'); ?></p>
           <?php endif; ?>

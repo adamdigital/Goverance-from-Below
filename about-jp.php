@@ -36,6 +36,10 @@ Template Name: About JP
     </div>
     </div>
 
+    <br>
+    <hr>
+    <img class="img-responsive" src="http://governancefrombelow.net/wp-content/uploads/2015/02/Altiplano-8-JP-rock-sml.jpg" width="635" height="423" alt="Jean-Paul rocking it in the field">
+
    </div><!--/ col sm 7 (center column) -->
 
     <div class="spacer-vertical"></div>
@@ -61,7 +65,7 @@ Template Name: About JP
       <div class="col-sm-12">
         <h3>CV</h3>
         <ul>
-          <li><a href="http://governancefrombelow.net/wp-content/uploads/2014/02/CV-JPFaguet.pdf" target="_blank">Jean-Paul's CV</a></li>
+          <li><a href="http://governancefrombelow.net/wp-content/uploads/2015/02/CVJPFaguet.pdf" target="_blank">Jean-Paul's CV</a></li>
         <ul>
       </div>
     </div><!--/ col 4 sidebar end -->

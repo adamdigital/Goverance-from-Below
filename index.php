@@ -1,3 +1,5 @@
+
+
 <?php get_header('default'); ?>
 
     <!-- Feature
@@ -48,38 +50,80 @@
 
 
         <div class="col-sm-6 col-md-4 col-lg-4">
-          <?php query_posts('cat=7&showposts=4'); ?>
-            <h3>Book launches &amp; talks</h3>
+          <?php query_posts('cat=7&showposts=2'); ?>
+            <h3>Invited lecture dates / <a href="/book-launches-and-talks/">View all</a></h3>
             <hr>
             <?php while (have_posts()) : the_post(); ?>
             <ul class="list-unstyled">
-            <li><h4><strong><?php the_date('M j, Y'); ?></strong><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h4></li>
+            <li><h4><?php the_date('M j, Y'); ?></h4>
+            <h5><?php echo get_post_meta($post->ID, 'Venue', true); ?></h5>
+            <p>"<?php the_title(); ?>"</p>
+            </li>
           </ul>
+        <hr class="featurette-divider-home-lecture-list">
             <?php endwhile; ?>
-            <br>
-            <a href="/book-launches-and-talks/" class="btn btn-default">View all</a>
+           
         </div><!-- /.col-sm-4 -->
         <div class="col-sm-6 col-md-3 col-lg-4">
           <?php query_posts('cat=2&showposts=1'); ?>
-            <h3>Updates</h3>
+            <h3>Online lectures &amp; events</h3>
             <hr>
-            <?php while (have_posts()) : the_post(); ?>
-            <h4><a href="<?php the_permalink(); ?>"> <?php the_title(); ?></a></h4>
-            <?php the_excerpt(); ?>
-            <?php endwhile; ?>
+            <iframe width="360" height="203" src="//www.youtube.com/embed/q1rBuPdLqKk" frameborder="0" allowfullscreen class="video-responsive"></iframe>
             <br>
-            <a href="/updates/" class="btn btn-default">View all</a>
+            <br>
+            <a href="#myModal" role="button" class="hidden-xs btn btn-default" data-toggle="modal">View video playlist</a>
+            <a href="https://www.youtube.com/watch?v=q1rBuPdLqKk&list=PLBHIFEylkPqMHKVK8l72IA2lmNfFqaHdX" class="btn btn-default hidden-sm hidden-md hidden-lg">View YouTube playlist</a>
         </div><!-- /.col-sm-4 -->
         <div class="col-sm-4 col-md-5 col-lg-4 homepage-gallery-positioning hidden-sm hidden-xs">
            <div class="spacer-vertical"></div>
+           <div class="spacer-vertical"></div>
            <?php echo do_shortcode('[print_gllr id=351]'); ?>
+           <br>
           <a href="/photos/" class="btn btn-default">View all photos</a>
         </div><!-- /.col-sm-4 -->
 
       </div><!-- /.row -->
 
 
-      <!-- START THE FEATURETTES -->
+      <!-- START of FEATURETTE -->
+    <hr class="featurette-divider">
+
+    <div class="row">
+
+     <div class="col-md-5">
+          <img class="featurette-image img-circle thumbnail img-responsive hidden-xs" src="http://governancefrombelow.net/wp-content/uploads/2014/06/chart-02.png" alt="Chart" width="466" height="542">
+        </div>
+
+        <div class="col-md-7">
+          <h3>Data</h3>
+          <p>These are the two databases on which all the quantitative work in Decentralization and Popular Democracy (econometrics, graphs, charts, etc) is based.</p>
+        <br>
+        <ul>
+          <li><a href="http://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_cs_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 1 - Bolivia_cs_1987_2007 (3.7mb)</a></li>
+          <li><a href="http://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_xt_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 2 - Bolivia_xt_1987_2007 (20.8mb)</a></li>
+          <li><a href="http://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Key.xls"><span class="glyphicon glyphicon-download"></span> Data set key to all the variable names</a></li>
+          <li><a href="http://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/case-studies/case-studies-figures-charagua.xls"><span class="glyphicon glyphicon-download"></span> Case-studies figures</a></li>
+        </ul>
+        <p>Further information on these datasets at <a href="/data/">Decentralization and Popular Democracy: data</a></p>
+        <br>
+        <h3>Interview recordings</h3>
+        <ul>
+          <li>Case study: <a href="/charagua/">Charagua</a></li>
+          <li>Case study: <a href="/viacha/">Viacha</a></li>
+        </ul>
+        <p>See all information on the <a href="/case-studies/">case studies</a> used in Decentralization and Popular Democracy.</p>
+         <br>
+        <h3>Teaching aids</h3>
+        <ul>
+          <li><a href="http://personal.lse.ac.uk/faguetj/documents/teaching-aids/fiscal-decentralization-and-accountability.ppt"><span class="glyphicon glyphicon-download"></span> Fiscal decentralization and accountability (2mbs)</a></li>
+          <li><a href="http://personal.lse.ac.uk/faguetj/documents/teaching-aids/global-decentralization-experiences-and-lessons.ppt"><span class="glyphicon glyphicon-download"></span> Lessons from global experience for successful decentralization of health and education services (0.2kbs)</a></li>
+        </ul>
+        <p>See all related <a href="/teaching-aids/">teaching material</a></p>
+        </div> 
+      </div>
+
+
+      <!-- START of FEATURETTE -->
 
       <hr class="featurette-divider">
 
@@ -88,6 +132,7 @@
      
 
         <div class="col-md-7">
+        <div id="about"></div>
           <h3>About the Governance from Below website</h3>
           <p>This website supports
         Decentralization and Popular Democracy, and related research projects by <a href="/jean-paul/">Jean-Paul Faguet</a> and his 
@@ -117,7 +162,7 @@
         </ul>
         </div>
         <div class="col-md-5">
-          <a href="https://maps.google.com/maps/ms?msid=202661256224975151523.000464c8d6358f8a05317&msa=0"><img class="featurette-image img-rounded thumbnail img-responsive hidden-xs" src="http://governancefrombelow.net/wp-content/uploads/2013/11/map-of-bolivia.jpg" alt="Map of Bolivia" width="500px" height="500px"></a>
+          <a href="https://maps.google.com/maps/ms?msid=202661256224975151523.000464c8d6358f8a05317&msa=0"><img class="featurette-image img-rounded img-responsive hidden-xs" src="http://governancefrombelow.net/wp-content/uploads/2013/11/map-of-bolivia.jpg" alt="Map of Bolivia" width="500px" height="500px"></a>
         </div>
       </div>
       
@@ -125,8 +170,8 @@
       <hr class="featurette-divider">
 
       <div class="row">
-
-        <div class="col-md-12 well">
+          <div class="col-md-2 textcenter"><img class="featurette-image img-responsive hidden-xs" src="http://governancefrombelow.net/wp-content/uploads/2014/06/icon_award-blue.png" alt="Map of Bolivia" width="132px" height="133px"></div>
+          <div class="col-md-10 well">
                <p>This website and much of the research on it are supported by the 
                 generosity of Niko Vardapetyan. The Niko Vardapetyan Research Award 
                 supports studies of the evolution and reform of economic and political 
@@ -142,5 +187,21 @@
 </div>
 
       <!-- /END THE FEATURETTES -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Online lectures and events</h4>
+      </div>
+      <div class="modal-body">
+     <iframe width="750" height="422" src="//www.youtube.com/embed/videoseries?list=PLBHIFEylkPqMHKVK8l72IA2lmNfFqaHdX" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>

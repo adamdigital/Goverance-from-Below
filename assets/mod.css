@@ -207,9 +207,6 @@ h5 {
 .featurette-divider {
   margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
-.featurette-divider-home-lecture-list {
-  margin: 18px 0; /* Space out the Bootstrap <hr> more */
-}
 
 /* Thin out the marketing headings */
 .featurette-heading {
@@ -252,9 +249,6 @@ h5 {
     position: absolute;
     top: 0;
     width: 50%; /* 6 columns */
-  }
-  .feature-type h2 {
-    font-size: 38px;
   }
 }
 
