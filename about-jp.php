@@ -20,6 +20,7 @@ Template Name: About JP
     <hr>
     <div class="row">
     <div class="col-sm-6">
+
       <h3>Research interests</h3>
       <ul>
         <li>Closed to-open-access transitions</li>
@@ -45,36 +46,17 @@ Template Name: About JP
     <div class="spacer-vertical"></div>
             
     <div class="col-sm-4 well pull-right">
-      <div class="col-sm-12">
-        <h3>Contact</h3>
-        <address>
-          <strong>London School of Economics and Political Science</strong><br>
-          Room: CON8.06, Connaught House<br>
-          <abbr title="Fax">F:</abbr> +44 (0) 20 7955 6844
-        </address>
-        <p>Also follow me on <a href="http://uk.linkedin.com/pub/jean-paul-faguet/36/79b/768" target="_blank">Linkedin</a></p>
-      </div>
-      <div class="col-sm-12">
-        <h3>Links &amp; affiliations</h3>
-        <ul>
-          <li><a href="http://www.lse.ac.uk/home.aspx" target="_blank">London School of Economics and Political Science</a></li>
-          <li><a href="http://www.columbia.edu" target="_blank">Columbia University<a/></li>
-          <li><a href="http://policydialogue.org" target="_blank">PolicyDialogue.org</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-12">
-        <h3>CV</h3>
-        <ul>
-          <li><a href="http://governancefrombelow.net/wp-content/uploads/2015/02/CVJPFaguet.pdf" target="_blank">Jean-Paul's CV</a></li>
-        <ul>
-      </div>
-    </div><!--/ col 4 sidebar end -->
-    <div class="col-sm-4 well pull-right">
-      <h3>PhD Graduates and Current Students</h3>
-      <p>Alongside co-authors, my former and current PhD students are at the core of a research community striving to push out the boundaries of political economy on the fundamental causes of development and non-development, and pioneering Q2 methods for subnational analysis.</p> 
-      <a href="/grads-students/" class="btn btn-default">View Graduate and student list</a>
-    </div>
 
+    <?php 
+
+    $aside_jp = get_field('aside_jp');
+
+    if ( $aside_jp ) {
+      echo $aside_jp;
+    }
+    ?>
+
+    </div><!--/ col 4 sidebar end -->
 </div><!--/ row-->
 
 <?php get_footer(); ?>
