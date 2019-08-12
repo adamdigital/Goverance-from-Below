@@ -1,18 +1,19 @@
 /*
 Theme Name: Goverance from Below
+Theme URI: https://wordpress.org/
+Author: Adam
+Author URI: NA
 Description: Academic site for JP's research
-Author: Adam D Brown
-.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: governance-from-below
+Tags: one-column, two-columns, custom-menu, custom-logo,
+This theme, like WordPress, is licensed under the GPL.
 */
 
-@import url("css/bootstrap.min.css");
+/* @import url("css/bootstrap.min.css");
 @import url("css/mod.css");
 
-body {
-  padding-top: 100px;
-  padding-bottom: 40px;
-  color: #5a5a5a;
-}
-
 ::selection {background: #ff69b4; color: #333;}
-::-moz-selection {background: #ff69b4; color: #333;}
+::-moz-selection {background: #ff69b4; color: #333;} */ */

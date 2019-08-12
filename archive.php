@@ -1,6 +1,6 @@
 <?php
-/**
-* Single default page
+/*
+Template Name: Archives
 *
 * @package WordPress
 * @subpackage GFB
@@ -10,26 +10,22 @@
 get_header(); 
 ?>
 
-
-<!-- Main content
-================================================== -->
-
 <div class="container">
  <div class="row">
- 
-  <div class="col-sm-12">
+
+
+ <div class="col-sm-12">
       <?php get_template_part('src/components/c-breadcrumb'); ?>
-  </div>
+ </div>
 
   <?php 
-  
-  get_template_part('src/components/c-lefthand-nav');
   get_template_part('src/components/c-rich-context-box');
-  
+  get_template_part('src/components/c-category-display');
+  get_template_part('src/components/c-secondary-content-block');
   ?>
-
+    
   </div>
-</div>
+</div><!-- #container -->
 
 <?php 
 get_footer();

@@ -1,6 +1,6 @@
 <?php
 /**
-* Single default page
+* Template Name: Default template
 *
 * @package WordPress
 * @subpackage GFB
@@ -25,6 +25,7 @@ get_header();
   
   get_template_part('src/components/c-lefthand-nav');
   get_template_part('src/components/c-rich-context-box');
+  get_template_part('src/components/c-secondary-content-block'); 
   
   ?>
 

@@ -5,27 +5,6 @@ Template Name: Book launches and talks
 ?>
 <?php get_header(); ?>
 
-<!-- Feature
-    ================================================== -->
-
-<div class="fortypercent feature-type">
-  <div class="spacer-vertical"></div>
- <div class="container"> 
-
-  <div class="row">
-
-    <div class="col-sm-11 col-md-9 col-lg-7">
-
-         <?php get_sidebar ('talks'); ?>
-
-</div>
-<div class="col-xs-3 col-sm-1 col-md-3 col-lg-5"></div>
-   
-  </div><!--/row-->
-  <div class="spacer-vertical"></div>
- </div><!--/container-->
-
-</div><!--/row-->
 
 
 <div class="container marketing">

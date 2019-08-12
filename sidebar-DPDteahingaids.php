@@ -1,4 +1,0 @@
-<h3>Downloads</h3>
-<p><a href="http://personal.lse.ac.uk/faguetj/documents/teaching-aids/fiscal-decentralization-and-accountability.ppt"><span class="glyphicon glyphicon-download"></span> Fiscal decentralization and accountability (2mbs)</a></p>
-<p><a href="http://personal.lse.ac.uk/faguetj/documents/teaching-aids/global-decentralization-experiences-and-lessons.ppt"><span class="glyphicon glyphicon-download"></span> Lessons from global experience for successful decentralization of health and education services (0.2kbs)</a></p>
-<p><a href="http://personal.lse.ac.uk/faguetj/documents/teaching-aids/decentralization-and-popular-democracy-in-bolivia-brief.ppt"><span class="glyphicon glyphicon-download"></span> Decentralization and popular democracy in Bolivia brief (3.9mb)</a></p>
