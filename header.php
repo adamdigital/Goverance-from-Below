@@ -15,40 +15,29 @@
   <body <?php body_class(); ?>>
   <?php include_once("analyticstracking.php") ?>
 
-<!-- NAVBAR
-================================================== -->
-
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <div class="navbar navbar-default navbar-fixed-top nav-expand">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/">Governance from Below</a>
-            </div>
-            <div class="navbar-collapse collapse">
-		<div class="strapline pull-left hidden-sm">Research on local political economy &amp; development</div>
-              <ul class="nav navbar-nav pull-right">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Books <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="/forty-percent/">Improving Basic Services for the Bottom Forty Percent</a></li>
-                    <li><a href="/dpd/">Decentralization and Popular Democracy</a></li>
-	            <li><a href="/espanol/">Descentralización y democratización en Bolivia</a></li>
-
-                  </ul>
-                </li>
-		<li><a href="/research/">Research</a></li>
-		<li><a href="/espanol/"><span class="label label-primary">Material en español</span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
+  <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand text-uppercase" href="<?php bloginfo('url')?>"><?php bloginfo('name')?></a>
+    <span>Research on local political economy & development&nbsp&nbsp&nbsp</span>
+      <?php
+      wp_nav_menu( array(
+        'menu'              => 'top_menu',
+        'depth'             => 2,
+        'container'         => 'div',
+        'container_class'   => 'collapse navbar-collapse',
+        'container_id'      => 'bs-govfrombelow-navbar-collapse-1',
+        'menu_class'        => 'nav navbar-nav',
+        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+        'walker'            => new WP_Bootstrap_Navwalker(),
+      ) );
+      ?>
     </div>
+  </nav>
+
+<?php
+// Get jumbotron banner (ACF) depending on template
+get_template_part('src/components/c-banner');

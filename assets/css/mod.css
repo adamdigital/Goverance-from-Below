@@ -1,11 +1,10 @@
  /*!
  * GFB THEME v1.0.1
  *
- * Copyright 2013 AD BROWN
+ * Copyright 2013 Adam
  * Licensed creative commons
  * 
  *
- * Designed and built by @adm_db
  */
 
 /* Model */
@@ -25,48 +24,6 @@
 .modal-header {
   padding-bottom: 0px;
   border-bottom: 0px solid #e5e5e5;
-}
-
-/* CUSTOMIZE THE NAVBAR
--------------------------------------------------- */
-
-/* Special class on .container surrounding .navbar, used for positioning it into place. */
-.navbar-wrapper {
-  position: relative;
-  z-index: 15;
-}
-.nav-expand {
- padding:18px 0px;
-  }
-.navbar-brand {
-  text-transform: uppercase;
-  font-size: 14px;
-  color:#000;
-}
-.strapline {
-  font-size: 14px;
-  margin-top:15px;
-  letter-spacing:-0.5px;
-  color:#428bca;
-}
-.nav-tabs-xpadding {
-  padding:30px 0px;
-  border-bottom:1px solid #eee;
-}
-.spacer-vertical {
-  min-height: 40px;
-}
-.navbar-default {
-  border-color:#fff;
- }
-.navbar-default .navbar-toggle {
-border-color: #A0A0A0;
-}
-.navbar-default .navbar-toggle .icon-bar {
-background-color: #8D8D8D;
-}
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-background-color: #FFF;
 }
 
 /* Gallery override */
@@ -121,41 +78,6 @@ h5 {
   font-size: 16px;
 }
 
-/* BG
-------------------------- */
-
-.bgHome {
-  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/11/mountains-2500x470.jpg');
-  background-repeat:no-repeat;
-}
-.bgtiticaca {
-  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/titicaca-2500x470.jpg');
-  background-repeat:no-repeat;
-}
-.bgchile {
-  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/bol-chile-2500x470.jpg');
-  background-repeat:no-repeat;
-}
-.bgmountain {
-  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/la-Paz-6-bg2500x470-2.jpg');
-  background-repeat:no-repeat;
-}
-.bgvillage {
-  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/Titicaca-1-bg-2500x470.jpg');
-  background-repeat:no-repeat;
-}
-.bgchurch {
-  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/Titicaca-4-bg-2500x470.jpg');
-  background-repeat:no-repeat;
-}
-.bgbook {
-  background-image:url('http://governancefrombelow.net/wp-content/uploads/2013/12/decentralization-book-sideways.jpg');
-  background-repeat:no-repeat; top:left;
-}
-.fortypercent {
-  background-image:url('http://governancefrombelow.net/wp-content/uploads/2015/02/Charagua-bg2500x470.jpg');
-  background-repeat:no-repeat; top:left;
-}
 
 /* Body
 ------------------------- */

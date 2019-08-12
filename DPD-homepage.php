@@ -34,6 +34,8 @@ Template Name: DPD homepage
 <div class="container">
  <div class="row">
 
+ <?php get_template_part('src/components/c-breadcrumb'); ?>
+
    <div class="col-sm-12"><?php get_sidebar ('DPD'); ?></div>
             
    <div class="col-sm-7 col-lg-8">
