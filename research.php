@@ -2,8 +2,7 @@
 /*
 Template Name: Research
 */
-?>
-<?php get_header(); ?>
+get_header(); ?>
 
 <!-- Feature
     ================================================== -->
@@ -14,7 +13,7 @@ Template Name: Research
 
   <div class="row">
 
-    <div class="col-xs-9 col-sm-11 col-md-9 col-lg-7">
+    <div class="col-9">
 
          <h2>Research</h2>
             <p class="lead hidden-xs">Related research publications.</p>
@@ -22,7 +21,7 @@ Template Name: Research
 
   <div class="spacer-vertical"></div>
 </div>
-<div class="col-xs-3 col-sm-1 col-md-3 col-lg-5"></div>
+<div class="col-3"></div>
    
   </div><!--/row-->
   <div class="spacer-vertical"></div>
@@ -31,8 +30,8 @@ Template Name: Research
 </div><!--/row-->
 
  <div class="container"> 
-
-   <div class="col-sm-7">
+ <div class="row">
+   <div class="col-7">
     
     <div class="row">
 <div class="spacer-vertical"></div>
@@ -51,7 +50,7 @@ Template Name: Research
    
     <div class="spacer-vertical"></div>        
             
-    <div class="col-sm-4 well pull-right"><h3>Awards the research used in Decentralization and Popular Democracy has received</h3>
+    <div class="col-4"><h3>Awards the research used in Decentralization and Popular Democracy has received</h3>
         <ul>
           <li>LSE Historic Theses Project – selected as an LSE PhD thesis of historic significance, 2010</li>
           <li>Corporación Andina de Fomento International Research Paper Prize, 2008</li>
@@ -65,12 +64,13 @@ Template Name: Research
 
          <div class="spacer-vertical"></div>
 
-     <div class="col-sm-4 well pull-right">
+     <div class="col-4">
       <h3>PhD Graduates and Current Students</h3>
       <p>Alongside co-authors, my former and current PhD students are at the core of a research community striving to push out the boundaries of political economy on the fundamental causes of development and non-development, and pioneering Q2 methods for subnational analysis.</p> 
       <a href="/grads-students/" class="btn btn-default">View Graduate and student list</a>
     </div>
-
+    </div><!--/ row-->
 </div><!--/ row-->
 
-<?php get_footer(); ?>
+<?php 
+get_footer();

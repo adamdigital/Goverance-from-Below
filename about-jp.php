@@ -6,8 +6,8 @@ Template Name: About JP
 <?php get_header(); ?>
 
  <div class="container"> 
-
-   <div class="col-sm-7">
+ <div class="row"> 
+   <div class="col-8">
     <div class="row">
      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
               <div class="col-sm-12">
@@ -45,7 +45,7 @@ Template Name: About JP
 
     <div class="spacer-vertical"></div>
             
-    <div class="col-sm-4 well pull-right">
+    <div class="col-4">
 
     <?php 
 
@@ -55,7 +55,7 @@ Template Name: About JP
       echo $aside_jp;
     }
     ?>
-
+   </div><!--/ row end -->
     </div><!--/ col 4 sidebar end -->
 </div><!--/ row-->
 
