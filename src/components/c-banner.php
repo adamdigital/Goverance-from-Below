@@ -56,7 +56,7 @@ if ( is_home() ) :
 
 <script>
 	// JS resizing background image to block element
- 	$(".jumbotron").backstretch("http://governancefrombelow.net/wp-content/uploads/2013/12/bol-chile-2500x470.jpg");
+ 	$(".jumbotron").backstretch("https://governancefrombelow.net/wp-content/uploads/2013/12/bol-chile-2500x470.jpg");
 </script>
 }
 

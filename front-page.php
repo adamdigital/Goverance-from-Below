@@ -23,7 +23,7 @@ get_header(); ?>
           <?php endwhile; ?>
 
           <div class="row">
-            <div class="col-sm-12 mt-4"><a href="https://twitter.com/GovFromBelow"><img width="26" height="22" alt="Twitter GovfromBelow" src="http://governancefrombelow.net/wp-content/uploads/2013/12/Twitter_logo_blue1.png"> @GovFromBelow</a></div>
+            <div class="col-sm-12 mt-4"><a href="https://twitter.com/GovFromBelow"><img width="26" height="22" alt="Twitter GovfromBelow" src="https://governancefrombelow.net/wp-content/uploads/2013/12/Twitter_logo_blue1.png"> @GovFromBelow</a></div>
           </div>
         </div>
 
@@ -44,17 +44,17 @@ get_header(); ?>
     <hr>
     <div class="row">
      <div class="col-sm-6">
-          <img class="featurette-image img-circle thumbnail img-responsive hidden-xs" src="http://governancefrombelow.net/wp-content/uploads/2014/06/chart-02.png" alt="Chart" width="466" height="542">
+          <img class="featurette-image img-circle thumbnail img-responsive hidden-xs" src="https://governancefrombelow.net/wp-content/uploads/2014/06/chart-02.png" alt="Chart" width="466" height="542">
         </div>
 
         <div class="col-sm-6">
           <h3>Data</h3>
           <p>These are the two databases on which all the quantitative work in Decentralization and Popular Democracy (econometrics, graphs, charts, etc) is based.</p>
         <ul>
-          <li><a href="http://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_cs_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 1 - Bolivia_cs_1987_2007 (3.7mb)</a></li>
-          <li><a href="http://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_xt_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 2 - Bolivia_xt_1987_2007 (20.8mb)</a></li>
-          <li><a href="http://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Key.xls"><span class="glyphicon glyphicon-download"></span> Data set key to all the variable names</a></li>
-          <li><a href="http://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/case-studies/case-studies-figures-charagua.xls"><span class="glyphicon glyphicon-download"></span> Case-studies figures</a></li>
+          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_cs_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 1 - Bolivia_cs_1987_2007 (3.7mb)</a></li>
+          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_xt_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 2 - Bolivia_xt_1987_2007 (20.8mb)</a></li>
+          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Key.xls"><span class="glyphicon glyphicon-download"></span> Data set key to all the variable names</a></li>
+          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/case-studies/case-studies-figures-charagua.xls"><span class="glyphicon glyphicon-download"></span> Case-studies figures</a></li>
         </ul>
         <p>Further information on these datasets at <a href="/data/">Decentralization and Popular Democracy: data</a></p>
         <br>
@@ -67,8 +67,8 @@ get_header(); ?>
          <br>
         <h3>Teaching aids</h3>
         <ul>
-          <li><a href="http://personal.lse.ac.uk/faguetj/documents/teaching-aids/fiscal-decentralization-and-accountability.ppt"><span class="glyphicon glyphicon-download"></span> Fiscal decentralization and accountability (2mbs)</a></li>
-          <li><a href="http://personal.lse.ac.uk/faguetj/documents/teaching-aids/global-decentralization-experiences-and-lessons.ppt"><span class="glyphicon glyphicon-download"></span> Lessons from global experience for successful decentralization of health and education services (0.2kbs)</a></li>
+          <li><a href="https://personal.lse.ac.uk/faguetj/documents/teaching-aids/fiscal-decentralization-and-accountability.ppt"><span class="glyphicon glyphicon-download"></span> Fiscal decentralization and accountability (2mbs)</a></li>
+          <li><a href="https://personal.lse.ac.uk/faguetj/documents/teaching-aids/global-decentralization-experiences-and-lessons.ppt"><span class="glyphicon glyphicon-download"></span> Lessons from global experience for successful decentralization of health and education services (0.2kbs)</a></li>
         </ul>
         <p>See all related <a href="/teaching-aids/">teaching material</a></p>
         </div> 
@@ -106,12 +106,12 @@ get_header(); ?>
         </ul>
         </div>
         <div class="col-sm-6">
-          <a href="https://maps.google.com/maps/ms?msid=202661256224975151523.000464c8d6358f8a05317&msa=0"><img class="featurette-image img-rounded img-responsive hidden-xs" src="http://governancefrombelow.net/wp-content/uploads/2013/11/map-of-bolivia.jpg" alt="Map of Bolivia" width="500px" height="500px"></a>
+          <a href="https://maps.google.com/maps/ms?msid=202661256224975151523.000464c8d6358f8a05317&msa=0"><img class="featurette-image img-rounded img-responsive hidden-xs" src="https://governancefrombelow.net/wp-content/uploads/2013/11/map-of-bolivia.jpg" alt="Map of Bolivia" width="500px" height="500px"></a>
         </div>
       </div>
       <hr>
       <div class="row">
-          <div class="col-md-2 textcenter"><img class="featurette-image img-responsive hidden-xs" src="http://governancefrombelow.net/wp-content/uploads/2014/06/icon_award-blue.png" alt="Map of Bolivia" width="132px" height="133px"></div>
+          <div class="col-md-2 textcenter"><img class="featurette-image img-responsive hidden-xs" src="https://governancefrombelow.net/wp-content/uploads/2014/06/icon_award-blue.png" alt="Map of Bolivia" width="132px" height="133px"></div>
           <div class="col-md-10 well">
                <p>This website and much of the research on it are supported by the 
                 generosity of Niko Vardapetyan. The Niko Vardapetyan Research Award 

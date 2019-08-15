@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Jean-Paul Faguet Governance from Below">
     <meta name="author" content="Jean-Paul Faguet">
-    <link rel="shortcut icon" href="http://governancefrombelow.net/wp-content/uploads/2013/12/Social_and_communication-08-16.png">
+    <link rel="shortcut icon" href="<?php bloginfo('url')?>/wp-content/uploads/2013/12/Social_and_communication-08-16.png">
 
     <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
 
