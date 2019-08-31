@@ -1,0 +1,28 @@
+
+{
+    "name": "browna2/governance-from-below",
+    "type": "wordpress-theme",
+    "license": "The MIT License (MIT)",
+    "description": "Gov from Below WP theme",
+    "homepage": "https://github.com/brown-a2/governance-from-below",
+    "authors": [
+      {
+        "name": "Governance-from-below",
+        "email": "NA",
+        "homepage": "https://github.com/brown-a2/governance-from-below"
+      }
+    ],
+    "keywords": [
+      "wordpress"
+    ],
+    "support": {
+      "issues": "https://github.com/brown-a2/governance-from-below/issues"
+    },
+    "require": {
+      "php": ">=7.1",
+      "composer/installers": "*"
+    },
+    "extra" : {
+      "installer-name": "governance-from-below"
+    }
+  }
