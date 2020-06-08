@@ -42,40 +42,10 @@ get_header(); ?>
         </div>
       </div>
     <hr>
-    <div class="row">
-     <div class="col-sm-6">
-          <img class="featurette-image img-circle thumbnail img-responsive hidden-xs" src="https://governancefrombelow.net/wp-content/uploads/2014/06/chart-02.png" alt="Chart" width="466" height="542">
-        </div>
-
-        <div class="col-sm-6">
-          <h3>Data</h3>
-          <p>These are the two databases on which all the quantitative work in Decentralization and Popular Democracy (econometrics, graphs, charts, etc) is based.</p>
-        <ul>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_cs_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 1 - Bolivia_cs_1987_2007 (3.7mb)</a></li>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_xt_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 2 - Bolivia_xt_1987_2007 (20.8mb)</a></li>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Key.xls"><span class="glyphicon glyphicon-download"></span> Data set key to all the variable names</a></li>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/case-studies/case-studies-figures-charagua.xls"><span class="glyphicon glyphicon-download"></span> Case-studies figures</a></li>
-        </ul>
-        <p>Further information on these datasets at <a href="/data/">Decentralization and Popular Democracy: data</a></p>
-        <br>
-        <h3>Interview recordings</h3>
-        <ul>
-          <li>Case study: <a href="/charagua/">Charagua</a></li>
-          <li>Case study: <a href="/viacha/">Viacha</a></li>
-        </ul>
-        <p>See all information on the <a href="/case-studies/">case studies</a> used in Decentralization and Popular Democracy.</p>
-         <br>
-        <h3>Teaching aids</h3>
-        <ul>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/teaching-aids/fiscal-decentralization-and-accountability.ppt"><span class="glyphicon glyphicon-download"></span> Fiscal decentralization and accountability (2mbs)</a></li>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/teaching-aids/global-decentralization-experiences-and-lessons.ppt"><span class="glyphicon glyphicon-download"></span> Lessons from global experience for successful decentralization of health and education services (0.2kbs)</a></li>
-        </ul>
-        <p>See all related <a href="/teaching-aids/">teaching material</a></p>
-        </div> 
-      </div>
+    
       <hr>
       <div class="row">
-        <div class="col-sm-6">
+      <div class="col-sm-6">
         <div id="about"></div>
           <h3>About the Governance from Below website</h3>
           <p>This website supports
