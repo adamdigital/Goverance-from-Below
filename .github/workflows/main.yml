@@ -21,20 +21,18 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+        ref: 'master'
 
     # Run SSH on MediaTemple
-    - name: ssh deploy
-      uses: easingthemes/ssh-deploy@v2.1.2
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
       with:
-        # Private Key
-        SSH_PRIVATE_KEY: SSH_PRIVATE_KEY
-        # Remote host
-        REMOTE_HOST: REMOTE_HOST
-        # Remote user
-        REMOTE_USER: REMOTE_USER
-        # Remote port
-        REMOTE_PORT: 22
-        # Source directory
-        SOURCE: default
-        # Target directory
-        TARGET: TARGET_DIR
+         key: ${{ secrets.SSH_PRIVATE_KEY }}
+         name: id_rsa
+         known_hosts: ${{ secrets.KNOWN_HOSTS }}
+    - run: |
+        git remote add gfb ${{ secrets.REMOTE_REPOSITORY }}
+        git checkout master
+        git push -u gfb master
