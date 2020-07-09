@@ -1,83 +1,62 @@
 <?php
 
-get_header(); ?>
+/**
+* Homepage
+*
+* @package WordPress
+* @subpackage GFB
+* @since GFB 1.0
+*/
 
+get_header();
+?>
 
-    <!-- Main content
-    ================================================== -->
+<div class="container">
+  <div class="row">
+  <div class="col-sm-6">
 
-    <div class="container">
-     <div class="row">
+  <?php
+    $homepage_feature_fields = get_field('homepage_feature_fields', 'option');
 
-      <div class="col-sm-6">
-          <?php query_posts('cat=7&showposts=2'); ?>
-            <h3>Invited lecture dates / <a href="/book-launches-and-talks/">View all</a></h3>
-            <hr>
-            <?php while (have_posts()) : the_post(); ?>
-            <ul class="list-unstyled">
-            <li><h4><?php the_date('M j, Y'); ?></h4>
-            <h5><?php echo get_post_meta($post->ID, 'Venue', true); ?></h5>
-            <p>"<?php the_title(); ?>"</p>
-            </li>
-          </ul>
-          <?php endwhile; ?>
+    foreach ($homepage_feature_fields as $field) {
+        $document_id = $field["homepage_feature_article_object"]->ID;
+        $document_object = get_field('document_upload', $document_id);
+        $publish_date = get_field('publish_date', $document_id);
+        $document_excerpt = get_field('document_excerpt', $document_id);
 
-          <div class="row">
-            <div class="col-sm-12 mt-4"><a href="https://twitter.com/GovFromBelow"><img width="26" height="22" alt="Twitter GovfromBelow" src="https://governancefrombelow.net/wp-content/uploads/2013/12/Twitter_logo_blue1.png"> @GovFromBelow</a></div>
-          </div>
-        </div>
+        $document_title = ucwords(strtolower($field["homepage_feature_article_object"]->post_title));
 
-        <div class="col-sm-6">
-          <?php query_posts('cat=2&showposts=1'); ?>
-            <h3>Online lectures &amp; events</h3>
-            <hr>
-            <iframe width="460" height="380" src="//www.youtube.com/embed/q1rBuPdLqKk" frameborder="0" allowfullscreen class="video-responsive"></iframe>
-            <a href="#myModal" role="button" class="hidden-xs btn btn-default" data-toggle="modal">View video playlist</a>
-            <a href="https://www.youtube.com/watch?v=q1rBuPdLqKk&list=PLBHIFEylkPqMHKVK8l72IA2lmNfFqaHdX" class="btn btn-default hidden-sm hidden-md hidden-lg">View YouTube playlist</a>
-        
-            <div class="col-sm-12">
-            <?php echo do_shortcode('[print_gllr id=351]'); ?>
-            <a href="/photos/" class="btn btn-default">View all photos</a>
-            </div>
-        </div>
-      </div>
-    <hr>
-    <div class="row">
-     <div class="col-sm-6">
-          <img class="featurette-image img-circle thumbnail img-responsive hidden-xs" src="https://governancefrombelow.net/wp-content/uploads/2014/06/chart-02.png" alt="Chart" width="466" height="542">
-        </div>
+        echo '<h2 class="title-feature">' . $field["homepage_feature_section_title"] . '</h2>';
+        echo '<a href="' . $document_object["url"] . '">' . $document_title . '</a>';
+        echo '<p>' . $document_excerpt . '</p>';
+    }
+    ?>
 
-        <div class="col-sm-6">
-          <h3>Data</h3>
-          <p>These are the two databases on which all the quantitative work in Decentralization and Popular Democracy (econometrics, graphs, charts, etc) is based.</p>
-        <ul>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_cs_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 1 - Bolivia_cs_1987_2007 (3.7mb)</a></li>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Bolivia_xt_1987_2007.dta"><span class="glyphicon glyphicon-download"></span> Data set 2 - Bolivia_xt_1987_2007 (20.8mb)</a></li>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/data/Key.xls"><span class="glyphicon glyphicon-download"></span> Data set key to all the variable names</a></li>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/decentralization-and-popular-democracy/case-studies/case-studies-figures-charagua.xls"><span class="glyphicon glyphicon-download"></span> Case-studies figures</a></li>
-        </ul>
-        <p>Further information on these datasets at <a href="/data/">Decentralization and Popular Democracy: data</a></p>
-        <br>
-        <h3>Interview recordings</h3>
-        <ul>
-          <li>Case study: <a href="/charagua/">Charagua</a></li>
-          <li>Case study: <a href="/viacha/">Viacha</a></li>
-        </ul>
-        <p>See all information on the <a href="/case-studies/">case studies</a> used in Decentralization and Popular Democracy.</p>
-         <br>
-        <h3>Teaching aids</h3>
-        <ul>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/teaching-aids/fiscal-decentralization-and-accountability.ppt"><span class="glyphicon glyphicon-download"></span> Fiscal decentralization and accountability (2mbs)</a></li>
-          <li><a href="https://personal.lse.ac.uk/faguetj/documents/teaching-aids/global-decentralization-experiences-and-lessons.ppt"><span class="glyphicon glyphicon-download"></span> Lessons from global experience for successful decentralization of health and education services (0.2kbs)</a></li>
-        </ul>
-        <p>See all related <a href="/teaching-aids/">teaching material</a></p>
-        </div> 
-      </div>
+  <h2 class="title-feature">Invited lecture dates</h2>
+  <a href="/book-launches-and-talks/">View all</a>
+</div>
+
+<div class="col-sm-6">
+      <?php
+        $homepage_video_title = get_field('homepage_feature_video_title', 'option');
+        echo '<h2 class="title-feature">' . $homepage_video_title . '</h2>';
+        echo '<div class="embed-container">' . get_field('homepage_feature_video', 'option') . '</div>';
+        ?>
+    <div class="col-sm-12">
+    <?php
+    $homepage_photo_gallery_title_text = get_field('homepage_feature_photo_gallery_title_text', 'option');
+    echo '<h2 class="title-feature">' . $homepage_photo_gallery_title_text . '</h2>';
+    echo do_shortcode('[print_gllr id=351]'); ?>
+    <a href="/photos/" class="btn btn-default">View all photos</a>
+    </div>
+</div>
+</div>
+ 
       <hr>
       <div class="row">
-        <div class="col-sm-6">
+      <div class="col-sm-6">
         <div id="about"></div>
-          <h3>About the Governance from Below website</h3>
+          <h2 class="title-feature">About the Governance from Below website</h2>
           <p>This website supports
         Decentralization and Popular Democracy, and related research projects by <a href="/jean-paul/">Jean-Paul Faguet</a> and his 
         <a href="/grads-students/">colleagues</a>. It includes additional material from the book 
@@ -142,5 +121,5 @@ get_header(); ?>
   </div>
 </div>
 
-<?php 
+<?php
 get_footer();

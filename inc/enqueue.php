@@ -25,6 +25,7 @@ function enqueue_govfrombelow_scripts() {
 
 	wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ) );
 	wp_enqueue_script( 'backstretch', get_stylesheet_directory_uri() . '/assets/js/jquery.backstretch.min.js', array( 'jquery' ), '2.1.17' );
+	wp_enqueue_script( 'document-listing', get_stylesheet_directory_uri() . '/assets/js/document-listing.js', array( 'jquery' ), '1.0.0' );
 
 	wp_enqueue_script( 'modernizer', get_stylesheet_directory_uri() . '/assets/js/modernizer.min.js' );
 	wp_style_add_data( 'modernizer', 'conditional', 'lt IE 9' );
