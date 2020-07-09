@@ -15,7 +15,7 @@ function enqueue_govfrombelow_scripts() {
 	wp_register_style( 'bootstrap-css-map', get_stylesheet_directory_uri() . '/assets/css/bootstrap.min.css.map', array(), '4.3.1', 'all' );
 	wp_enqueue_style( 'bootstrap-css-map' );
 
-	wp_register_style( 'mod-css', get_stylesheet_directory_uri() . '/assets/css/mod.css', array(), '1.6.0', 'all' );
+	wp_register_style( 'mod-css', get_stylesheet_directory_uri() . '/assets/css/mod-v2.css', array(), '1.6.0', 'all' );
 	wp_enqueue_style( 'mod-css' );
 
 	// Third party vendor scripts
