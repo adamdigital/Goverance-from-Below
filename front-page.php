@@ -18,6 +18,8 @@ get_header();
   <?php
     $homepage_feature_fields = get_field('homepage_feature_fields', 'option');
 
+    if (!empty($homepage_feature_fields)) {
+
     foreach ($homepage_feature_fields as $field) {
         $document_id = $field["homepage_feature_article_object"]->ID;
         $document_object = get_field('document_upload', $document_id);
@@ -30,6 +32,8 @@ get_header();
         echo '<a href="' . $document_object["url"] . '">' . $document_title . '</a>';
         echo '<p>' . $document_excerpt . '</p>';
     }
+
+  }
     ?>
 
   <h2 class="title-feature">Invited lecture dates</h2>
