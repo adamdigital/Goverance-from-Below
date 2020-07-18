@@ -14,8 +14,8 @@ $query = new WP_Query([
     'post_type' => 'lectures',
     'posts_per_page' => '-1',
     'meta_key' => 'lecture_date',
-	'orderby' => 'meta_value_num',
-	'order' => 'DEC',
+    'orderby' => 'meta_value_num',
+    'order' => 'DEC',
     ]);
 
 if ($query->have_posts()) :
@@ -43,7 +43,7 @@ if ($query->have_posts()) :
                     // Display the location if exsits
                     if ($lecture_location) {
                         foreach ($lecture_location as $location) {
-                            _e('<span style="display:block">' . $location->name . '</span><br>');
+                            _e('<span style="display:block">' . $location->name . '</span>');
                         }
                     }
                     ?>
