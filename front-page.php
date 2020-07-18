@@ -36,8 +36,8 @@ get_header();
   }
     ?>
 
-  <h2 class="title-feature">Invited lecture dates</h2>
-  <a href="/book-launches-and-talks/">View all</a>
+  <h2 class="title-feature">Invited lectures and conference papers</h2>
+  <a href="/invited-lectures-and-conference-papers/">View all</a>
 </div>
 
 <div class="col-sm-6">
