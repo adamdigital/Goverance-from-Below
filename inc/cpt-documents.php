@@ -5,7 +5,9 @@
  *
  * @package govfrombelow
  */
-
+if (!defined('ABSPATH')) {
+    exit;
+}
 /**
 *
 * Register the Document custom post type

@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Document Listing Template
+* Template Name: Lectures template
 *
 * @package WordPress
 * @subpackage GFB
@@ -15,15 +15,16 @@ get_header();
 ?>
 
 <div class="container">
- <div class="row">
+    <div class="row">
 
-  <?php
-    get_template_part('src/components/c-rich-context-box');
-    get_template_part('src/components/c-document-listing');
+    <?php
+    the_title('<h2 class="m-3">', '</h2>');
+
+    get_template_part('src/components/c-lecture-listing');
     get_template_part('src/components/c-secondary-content-block');
     ?>
 
-  </div>
+    </div>
 </div>
 
 <?php

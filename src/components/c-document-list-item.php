@@ -1,4 +1,8 @@
 <?php
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 if (!empty($doc)) {
     $document_upload = get_field('document_upload', $doc->ID);
     $publish_date = get_field('publish_date', $doc->ID);

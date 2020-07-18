@@ -10,10 +10,6 @@
 get_header(); 
 ?>
 
-
-<!-- Main content
-================================================== -->
-
 <div class="container">
  <div class="row">
  
@@ -21,13 +17,11 @@ get_header();
       <?php get_template_part('src/components/c-breadcrumb'); ?>
   </div>
 
-  <?php 
-  
-  get_template_part('src/components/c-lefthand-nav');
-  get_template_part('src/components/c-rich-context-box');
-  get_template_part('src/components/c-secondary-content-block'); 
-  
-  ?>
+    <?php 
+    get_template_part('src/components/c-lefthand-nav');
+    get_template_part('src/components/c-rich-context-box');
+    get_template_part('src/components/c-secondary-content-block'); 
+    ?>
 
   </div>
 </div>

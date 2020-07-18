@@ -11,6 +11,7 @@ require_once get_template_directory() . '/inc/breadcrumb.php';
 require_once get_template_directory() . '/inc/navbar-menu.php';
 require_once get_template_directory() . '/inc/taxonomies.php';
 require_once get_template_directory() . '/inc/cpt-documents.php';
+require_once get_template_directory() . '/inc/cpt-lectures.php';
 require_once get_template_directory() . '/inc/admin-menu-register-homepage.php';
 
 // Overrides scheduling posts in the future
